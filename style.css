@@ -14,6 +14,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    gap: 8px;
 }
 /* Seleção de multiplos seletores - uso de virgulo como "E"*/
 header,
@@ -58,4 +59,52 @@ address{
     background-color: #d9d9d9;
     padding: 20px;
     border-radius: 30px;
+}
+/*-------------------------------------------*/
+@media (max-width:600px) and (min-width:100px){
+    body{
+        background-color: pink;
+        padding: 10px 20px;
+    }
+    main{
+        flex-direction: column;
+    }
+    aside,article{
+        width: 100%;
+    }
+}
+/*-------------------------*/
+@media (max-width:1600px) and (min-width:600px) {
+    body{
+        background-color: rgb(37, 38, 90);
+        font-size: 12px;
+    }
+    main{
+        flex-direction: column;
+        background-color: rgb(93, 22, 22);
+    }
+    aside,article{
+        width: 100%;
+        background-color: rgb(195, 117, 117);
+        padding: 15px;
+    }
+}
+/*--------------------------------------------*/
+@media(max-width:2000px) and (min-width:1600px) {
+    body{
+        background-color: rgb(3, 30, 53);
+        font-size: 30px;
+        gap: 20px;
+    }
+    main{
+        flex-direction: column;
+        background-color: rgb(85, 37, 169);
+        gap: 20px;
+    }
+    aside,article{
+        width: 100%;
+        background-color: rgb(133, 17, 94);
+        padding: 15px;
+    }
+    
 }
